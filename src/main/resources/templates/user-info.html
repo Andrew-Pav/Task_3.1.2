@@ -20,8 +20,23 @@
 
     <br/><br/>
 
+    <label for="password">Password: </label>
+    <input type="text" th:field="*{password}" id="password"/>
+
+    <br/><br/>
+
     <label for="age">Age: </label>
     <input type="text" th:field="*{age}" id="age"/>
+
+    <br/><br/>
+
+    <label for="role">Role: </label>
+    <label>
+        <select th:field="*{roles}" id="role">
+            <option th:value="1" th:text="USER"></option>
+            <option th:value="2" th:text="ADMIN"></option>
+        </select>
+    </label>
 
     <br/><br/>
 

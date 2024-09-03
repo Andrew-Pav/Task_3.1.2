@@ -9,6 +9,8 @@
 <h1>Ваши данные:</h1>
 
 <div th:each="user : ${userInfo}">
+    <big>ID: </big>
+    <big th:text="${user.id} + ', '"></big>
     <big>Имя: </big>
     <big th:text="${user.firstName} + ', '"></big>
     <big>Фамилия: </big>
