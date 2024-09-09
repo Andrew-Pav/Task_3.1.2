@@ -5,11 +5,14 @@ import org.springframework.stereotype.Component;
 import web.models.Role;
 import web.models.User;
 import web.service.UserService;
+import web.service.UserServiceImpl;
 
 import java.util.Set;
 
 @Component
 public class Init {
+
+    public UserService userService = new UserServiceImpl();
 
     @Autowired
     public Init(UserService userService) {
